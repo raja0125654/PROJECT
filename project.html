@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      /* CSS styles for your shopping website */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #add8e6;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      nav  {
+        background-color: #add8e5;
+        color: #fff;
+        display: flex;
+        justify-content: space-arround;
+        padding: 5px;
+      }
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      article {
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #aaa;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+      }
+	  .footer{
+	  background-color:dark blue;
+	  }
+	  .footcontainer{
+	  width:100%;
+	  padding:70px 30px 20px;
+	  }
+	  .socialicon{
+	  display:flex;
+	  justify-content:center;
+	  }
+	  .socialicon a{
+	  text-decoration:none;
+	  padding:10px;
+	  background-color: white;
+	  margin:10px;
+	  border-radius: 50%;
+	  }
+	  .socialicon a{
+	  font-size: 2em;
+	  color:black;
+	  opacity:0.9;
+	  }
+	  .footernav{
+	  margin:30px 0;
+	  }
+	  .footernav ul{
+	  display: flex;
+	  justify-content:center;
+	  }
+	  .footernav ul a{
+	  color:black;
+	  margin:20px;
+	  }
+	  .footerbottom{
+	  background-color:#0000;
+	  padding:20px;
+	  text-align:center;
+	  }
+	  .footerbottom p{
+	  color:white;
+	  }
+	  .designer{
+	  opacity:0.7;
+	  text-transform:uppercase;
+	  letter-spacing;1px
+	  font-weight:400
+	  margin:0px 5px
+	  }  
+	 article img {
+        display: block;
+		border-radius: 8px;
+		width: 500px;
+		height: 250px;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      article h3 {
+        margin: 10px 0;
+      }
+      article p {
+        margin: 10px 0;
+      }
+      button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+      }
+	  #home {
+     width: 46px;
+     height: 44px;
+     background: url(img_navsprites.gif) 0 0;
+    }
+	#add to cart {
+     width: 46px;
+     height: 44px;
+     background: url(img_navsprites.gif) 0 0;
+    }
+    </style>
+  </head>
+<script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+  <body>
+    <header>
+      <h1>My Shop Book Buy</h1>
+      <p> WELCOME TO MY BOOK STORE.</p>
+	  <h2 ><Marquee behavior="alternate" scrollamount="20"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ENzXIyyxjkSx7kQbYKnTc_-zdLsfGe-twg&usqp=CAU" 
+	  align="left" width="100vh" height="50vh">All Stream Books Are Available On This Site.</Marquee></center></h2>
+    </header>
+    <nav 	
+	   <ul>
+  <li><a href="https://www.amazon.in/ref=nav_logo"><img src="https://media.istockphoto.com/id/1312128591/vector/home-icon-vector-house-sign.jpg?s=612x612&w=0&k=20&c=jxUT546g8Cfgv1SiAfh2Eos46XI3DqYvPLhxGFaobpE=" width="50" height="50"></a></li>
+  <li><a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcart%2Fsmart-wagon%3FnewItems%3D87d6cb93-9081-4dda-85c9-13acb100153f%2C1%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><img src="https://image.shutterstock.com/image-vector/login-button-sign-key-push-260nw-1725108469.jpg"width="50" height="50"></a></li>
+  <li><a href="https://www.amazon.in/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fcart%2Fsmart-wagon%3FnewItems%3D87d6cb93-9081-4dda-85c9-13acb100153f%2C1%26ref_%3Dnav_ya_signin&prevRID=Q8JHEXDFZTGNH6HVN5C9&openid.assoc_handle=inflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><img src="https://t3.ftcdn.net/jpg/04/54/10/28/360_F_454102895_9HaAo07nq3SZnQmZQgQTrDxncIEojsbH.jpg"width="70" height="50"></a></li>
+    </nav>
+    <section>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/81XqXdOE5mS._AC_UY218_.jpg" alt="by Mahatma Gandh">
+        <h3>An Autobiography : The Story Of My Experiments With Truth</h3>
+        <p>Mahatma Gandhi's autobiography, "The Story of My Experiments with Truth"</P>
+		<p>Delve into the life and experiences of one of history's greatest leaders </p>
+        <p>Gandhi's introspective journey, his principles, and his nonviolent philosophy</p>
+<p>Perfect for those seeking inspiration, personal growth, and a deeper understanding of Gandhi's legacy</p>
+<p>A timeless classic that continues to resonate with readers, promoting peace, truth, and self-reflection.</p>
+        <p><h3> ₹ 109.00</h3> </p>
+        <button type="button"> <a href="https://www.amazon.in/Mahatma-Gandhi-Autobiography-Story-Experiments/dp/8172343116/ref=sr_1_1_sspa?crid=3FTY71H0177Y9&keywords=book&qid=1692879091&sprefix=book%2Caps%2C1317&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Click To Buy</a></button>
+		<button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=060d405a-9dd3-4a77-8fd4-1f4e8ccf5f22,1&ref_=sw_refresh">Add To Cart </a></button>
+		</article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/41jwFen003L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="C++ for Beginners ">
+        <h3>C++ for Beginners : A Step-by-Step Guide on C++ Programming Language Fundamentals with Practical Explanations (2022 Crash Course for All) </h3>
+        <p>A look at the history of the C++ programming language and how we might use it for our programming requirements.</p>
+        <p>An investigation on writing our first C++ programs, whether we are professionals or beginners.</p>
+		<P>Are You Prepared to Learn C++?</p>
+		<p><h3>₹254.00</h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Beginners-Step-Step-Fundamentals-Explanations/dp/B0BHDGL198/ref=sr_1_6?crid=3KBJ3J1M2014C&keywords=all+computer+language+book&qid=1692882190&sprefix=computer+language+book%2Caps%2C857&sr=8-6">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=7255b61e-63fd-4a40-906c-ac480bd155a1,2&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/518TsP4GK9L.jpg" alt="Computer Programming">
+        <h3>The All In One Computer Programming Bible: Beginner to Intermediate Guides on Python, Computer Programming, Raspberry Pi and Black Hat Hacking!</h3>
+        <h4> Inside You Will Discover:</h4>
+		<ul>
+		   <li> The C++ Programming Language </li>
+		   <li> The C# Programming Language </li>
+		   <li> The Python Programming Language </li>
+		   <li> Working with the Java Coding Language </li>
+		   <li> How To Be Completely Anonymous Online Like The Pro's </li>
+		   <li> How To Keep Yourself Safe From Being Hacked </li>
+		   <li> Which Tools The Hackers Use To Crack Passwords </li>
+		   <li> Advance Hacking Tips – the things to consider </li>
+		   <li> Raspberry Pi 3 – Model B Hardware Specifications </li>
+		   <li> Configuring Raspberry Pi </li>
+		   <li> Python Programing: Working with Loops in Python </li>
+		   <li> Handling Exceptions in Your Code </li>
+		   <li> Conditional Statements in Python </li>
+		</ul>
+        <p><h3> ₹283.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/All-One-Computer-Programming-Bible-ebook/dp/B07F9XZ41R/ref=sr_1_5?crid=3KBJ3J1M2014C&keywords=all+computer+language+book&qid=1692882190&sprefix=computer+language+book%2Caps%2C857&sr=8-5">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/51TsoeLmPML._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" alt="COMPUTING FUNDAMENTALS">
+        <h3> COMPUTING FUNDAMENTALS AND C PROGRAMMING 2ND EDITION </h3>
+        <p> The book has been thoroughly updated as per the requirements of the new syllabus with optimum coverage of computer fundamentals. The concepts of C along with a competitive edge will prepare students for their CS and IT domain specific study and applications in their respective branches, as well as campus placements. It follows an illustrative and easy-to-learn approach with unique combination of optimum theory and numerous examples.</p>
+        <p><h3>₹601.00</h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Computing-Fundamentals-C-Programming-Balagurusamy/dp/9352604164/ref=sr_1_7?crid=3KBJ3J1M2014C&keywords=all+computer+language+book&qid=1692882190&sprefix=computer+language+book%2Caps%2C857&sr=8-7">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=Cdb535caf-4c83-4748-b29d-6cdb19dc885f,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/51vaW9RuK0L._SX381_BO1,204,203,200_.jpg" alt="Web Technologies">
+        <h3> Web Technologies: HTML,JAVASCRIPT,PHP,JAVA,JSP,ASP.NET,XML and Ajax, Black Book: HTML, Javascript, PHP, Java, Jsp, XML and Ajax, Black Book </h3>
+        <p> This is the one-time reference book, written from the programmer’s point of view, containing hundreds of examples and covering nearly every aspect of various Web technologies, such as PHP, HTML, XML, AJAX, ASP.NET, Servlets, and JSP.
+		It will help you to master the entire spectrum of Web Technologies by exploring and implementing various concepts of each Web technology.</p>
+        <p><h3> ₹ 784.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Web-Technologies-JAVASCRIPT-ASP-NET-Javascript/dp/8177229974/ref=sr_1_11?crid=3J6KGY76UHC22&keywords=all+computer+language+book&qid=1692955335&sprefix=%2Caps%2C631&sr=8-11">Click To Buy</a></button>
+         <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=C8923a05e-5147-41db-b970-6bb205451302,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/51HWyD997xL._SX379_BO1,204,203,200_.jpg" alt="polytechnic book">
+        <h3>A Basic Course in Mathematics for Polytechnic Vol.1</h3>
+        <p>The book “A Basic Course in Mathematics for polytechnic” is prepared to serve the students of the Diploma course in polytechnic under the Technical Education of Assam & all other Indian states.</p>
+        <p> ₹300.00</p>
+         <button type="button"> <a href="https://www.amazon.in/Basic-Course-Mathematics-Polytechnic-Vol-1/dp/938430347X/ref=sr_1_1_sspa?crid=2WO6AK3PWIEU&keywords=polytechnic+1st+semester+books&qid=1692955670&sprefix=polytech%2Caps%2C322&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Click To Buy</a></button>
+         <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=4bb9335f-933e-4710-9a73-fe6023fbcb81,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/41aXpkH-MzL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" alt="physics book">
+        <h3>Applied Physics-I (UPBTE - Polytechnic-I First Semester Student</h3>
+        <p>This book has been by a Senior Professor as per newly prescribed syllabus of Directorate of Technical Education, Assam & also very useful for Polyrtechnic Students of All Indian States.</p>
+        <p><h3> ₹200.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Applied-Physics-I-UPBTE-Polytechnic-I-Semester/dp/B0786N8537/ref=sr_1_2?crid=2WO6AK3PWIEU&keywords=polytechnic+1st+semester+books&qid=1692955670&sprefix=polytech%2Caps%2C322&sr=8-2">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=a2c394b8-f242-4898-bcf8-be7d518998ed,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/51xneKLLiVL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="book">
+        <h3>Bihar Polytechnic Sanyukt Pravesh Pratiyogita Pareeksha BCECE </h3>
+        <p>पुस्तक का नाम – BIHAR POLYTECHNIC SANYUKT PRAVESH PRATIYOGITA PARIKSHA BCECE 2022
+पुस्तक का प्रकार – Study Guide
+विषय – भौतिक विज्ञान, रसायन विज्ञान, गणित पुस्तक के मुख्य अंश :
+परीक्षा से संबंधित – यह पुस्तक उन अभ्यर्थियों के लिए है जो बिहार संयुक्त प्रवेश प्रतियोगिता परीक्षा बोर्ड द्वारा आयोजित पॉलिटेक्निक प्रवेश परीक्षा की तैयारी कर रहे हैं।
+पुस्तक की विषय सूची – विगत वर्षों के सॉल्व्ड पेपर्स, भौतिक विज्ञान, रसायन विज्ञान, गणित।</p>
+        <p><h3> ₹345.00</h3></p>
+       <button type="button"> <a href="https://www.amazon.in/Bihar-Polytechnic-Combined-Entrance-BCECE/dp/9354882110/ref=sr_1_11_sspa?crid=2WO6AK3PWIEU&keywords=polytechnic+1st+semester+books&qid=1692955670&sprefix=polytech%2Caps%2C322&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1">Click To Buy</a></button>
+       <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=9310d96f-02d8-4c8f-92d3-a8b363c93fac,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/513Yh1XpkpL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Book">
+        <h3>TOPPERSNOTES NEET UG Chemistry, Physics & Biology Notes/Study Material for 2024 Exam Preparation | Books in English Medium | Latest Edition</h3>
+        <p> <h4>PREPARED UNDER THE GUIDANCE OF BEST FACULTY:</h4> rime faculties & toppers have shared their experience to add value to the book for NEET preparation. Their contribution in the selection of quality content is significant. Important topics for NEET are covered in a comprehensive manner.</p>
+        <p>₹5,399.00</p>
+        <button type="button"> <a href="https://www.amazon.in/TOPPERSNOTES-Chemistry-Physics-Material-Preparation/dp/B09T715PWR/ref=sr_1_1_sspa?crid=HOQBML85KTF5&keywords=neet+books&qid=1692957104&sprefix=neet+%2Caps%2C286&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=87d6cb93-9081-4dda-85c9-13acb100153f,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/51cXA-KdQlL._SX368_BO1,204,203,200_.jpg" alt="upsc book">
+        <h3>Drishti IAS IAS Quick Book In Hindi Combo Of 10 | UPSC | Civil Services Exam | State Administrative Exams</h3>
+        <p>Comprehensive Exam Preparation: Get ready to ace your UPSC exams with the Drishti IAS IAS Quick book combo.
+		This combo includes 10 Quick books in Hindi, covering a wide range of subjects essential for the exam.</p>
+        <p> <h3> ₹2,799.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/drishti-quick-book-combo-set/dp/B09CYYP852/ref=sr_1_1?crid=3CHPQ4ETAXZFT&keywords=drishti+ias+books+in+hindi&qid=1692958234&sprefix=dri%2Caps%2C359&sr=8-1">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=c2678a58-163d-4863-8257-17898e0698fb,1&ref_=sw_refresh">Add To Cart </a></button>
+    	</article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/41xPag1z22L._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" alt="jeemains book">
+        <h3>TOPPERSNOTES JEE Mains & Advance Exam 2023 Physics Mathematics and Chemistry Study Material in English (Set of 14 Books)- Latest Edition [Perfect Paperback] TOPPERSNOTES</h3>
+        <p><h2>TRUSTED BY JEE STUDENTS:</h2> These books contain everything that's important as per jee mains and jee advance exam. The content is prepared under the guidance of experienced faculties toppers, and these notes follow the latest pattern of the examination. Therefore, students have shown immense faith in these notes.</p>
+        <p><h3>₹5,989.00</h3></p>
+        <button type="button"> <a href="https://www.amazon.in/TOPPERSNOTES-Advance-Mathematics-Chemistry-Material/dp/B09Y1F4SQW/ref=sr_1_6?keywords=book+jee&qid=1692968682&sr=8-6">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=2bc71dba-b865-4ccf-945b-3c315e4707ed,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+      <article>
+      <img src="https://m.media-amazon.com/images/I/51QkSlKzQYL._SY322_BO1,204,203,200_.jpg" alt="physics book">
+        <h3>Combo Physics 144 JEE Mains & 46 JEE Advanced Previous Year (1978 - 2023) Chapterwise & Topicwise Solved Papers (set of 2 Books) | IIT-JEE PYQ ... 100% Detailed Solutions for JEE 2024 & 2025</h3>
+        <p>✍ Book 1: 144 JEE Mains Previous Year (2002 - 2023) Chapterwise & Topicwise Solved Papers Physics - Collection of all PYQs from 2002, since JEE Main started, to 2023 Online & Offline Physics Papers. The Books include all Online papers held in all Phases and sittings. All Questions are divided Chapter-wise followed by Topic-wise in Chapter order of NCERT Class 11 & 12 Books. Errorless solutions to all all Questions are provided in the Books. The Book includes all MCQs and NVQs as asked in the offline papers.</p>
+        <p><h3> ₹954.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Combo-Physics-Mains-Advanced-Previous/dp/9355646895/ref=sr_1_12_sspa?keywords=book+jee&qid=1692968682&sr=8-12-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=3a0d7bb2-d247-4ac8-8b97-533e221168c7,1&ref_=sw_refresh">Add To Cart </a></button>
+      </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/514Nwyc+IbL._SX258_BO1,204,203,200_.jpg" alt="MAIN & ADVANCED">
+        <h3>Errorless Physics for IIT-JEE (MAIN & ADVANCED) as per JAB (Paperback+Free Smart E-book) Revised Updated New Edition 2023 (2 volumes) by (Original ... Scorer USS Book with Trademark Certificate)</h3>
+        <p>UBD1960 Errorless Physics Revised & Updated 2023 New Edition for IIT-JEE by UBD1960 is most trusted largest selling book. This book is trusted by more than 17 lakh students in last 31 years. This book is strictly as per syllabus & new pattern of examination by JEE Apex Board (JAB). This book contains all the previous 34 years papers. To save student’s valuable time, no repeated and similar type objective questions. This book is 100% solved with explanations. Objective questions are subchapterwise divided & levelwise graded with exhaustive theory. See Trademark Certificate issued by Government of India before purchasing THE ORIGINAL UBD1960 ERRORLESS BOOK. Recommended by TOP RANKERS & Top teachers.</p>
+        <p><h3> ₹1,330.00</p>
+        <button type="button"> <a href="Errorless Physics for IIT-JEE (MAIN & ADVANCED) as per JAB (Paperback+Free Smart E-book) Revised Updated New Edition 2023 (2 volumes) by (Original ... Scorer USS Book with Trademark Certificate)">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=cb3322e5-619a-473a-8fd3-0d4ca4fdeb45,1&ref_=sw_refresh">Add To Cart </a></button>
+      </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/41t4HmPQ9ZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Dr. Kalam Guru Gyan">
+        <h3>Dr. Kalam Guru Gyan</h3>
+        <p>डॉ. कलाम को देश के युवाओं में अगाध विश्वास था। वे देश के कल्याण को लेकर इस कदर चिंतित रहते थे कि अपने जीवन के आखिरी दो घंटे उन्होंने आतंक और संसद् की काररवाई ठप होने के खतरों पर चर्चा करते हुए बिताए थे। अपने आखिरी क्षणों में भी उनका भरोसा कायम था कि युवा, खास तौर पर छात्र तमाम पीड़ादायी मुद्दों के समाधान लेकर देश के लिए आगे आएँगे। नई पीढ़ी के प्रज्वलित मस्तिष्क के प्रति उनका विश्वास हमेशा बना रहा, जिसे वे धरती पर सबसे बहुमूल्य उपहार मानते आए थे।
+		मुझे इस महान् आत्मा के साथ बेहद करीब से काम करने का मौका मिला। लोगों के लिए भले वे मिसाइलमैन रहे हों, मेरे लिए वो हमेशा ‘स्माइलमैन’ ही रहेंगे। दुनिया ने उन्हें अंतरिक्ष विज्ञानी के तौर पर देखा, जिसने उपग्रहों को धरती के चारों ओर घूमते हुए देखा।</p>
+        <p><h3> ₹341.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Kalam-Guru-Gyan-Srijan-Singh/dp/9352660838/ref=sr_1_1_sspa?crid=3BV5J3VNYQ6JS&keywords=apj+abdul+kalam+books+in+hindi&qid=1692973124&sprefix=apj%2Caps%2C361&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Click To Buy</a></button>
+         <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=edfaf57f-b9cf-4aaf-a518-a27d0900c0fc,1&ref_=sw_refresh">Add To Cart </a></button>
+   	  </article>
+      <article>
+        <img src="https://m.media-amazon.com/images/I/51XmJ3059zL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Trading Course">
+        <h3>The Complete Trading Course: Price Patterns, Strategies, Setups, and Execution Tactics: 469 (Wiley Trading)</h3>
+        <p> practical guide covering everything the serious trader needs to know While a variety of approaches can be used to analyze financial market behavior and identify potential trading/investing opportunities, no approach is completely accurate. The challenge for traders is to find a method that they feel comfortable with and are able to implement consistently, through the normal ups and downs of trading.</p>
+        <p><h3> ₹5,200.00 </h3></p>
+        <button type="button"> <a href="https://www.amazon.in/Complete-Trading-Course-Strategies-Execution/dp/0470594594/ref=sr_1_8?crid=2TABENUBHDRQV&keywords=high+price+book&qid=1693037348&sprefix=high+price+b%2Caps%2C308&sr=8-8">Click To Buy</a></button>
+        <button type="button"> <a href="https://www.amazon.in/cart/smart-wagon?newItems=3dc603fe-8e4d-4f0f-b57b-d341d9129e15,1&ref_=sw_refresh">Add To Cart </a></button>
+	  </article>
+   <footer>
+        <div class="footcontainer">
+		   <div class="socialicon">
+        <a href="https://www.facebook.com/suhail.sah.9828?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/MDRAJAUDDIN2116?t=woNIj5Qj7u8Bwgu4t3aXwQ&s=09" class="fa fa-twitter"></a>
+        <a href="https://www.google.com/" class="fa fa-google-plus"></a>
+        <a href="https://www.linkedin.com/in/md-rajauddin-32b99b287" class="fa fa-linkedin"></a>
+        <a href="https://youtube.com/@making076?si=gfa0cgaMdkIWtT3p" class="fa fa-youtube"></a>
+        <a href="https://instagram.com/im_king_074?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" class="fa fa-instagram"></a>
+        <a href="https://pin.it/50OWJ9Z" class="fa fa-pinterest"></a>
+      </div>
+	  <div class="footernav">
+	      <ul>
+		     <li><a href="">Home</a></i>
+			 <li><a href="">About</a></i>
+			 <li><a href="">contect US</a></i>
+			 <li><a href="">Book</a></i>
+		     <li><a href="">shopping</a></i>
+			 </ul>
+			</div>
+            <div class="footerbotton">
+             <p> copyright &copy;2023 designed by <span class="designer">Md Rajauddin</p>			
+ </footer>
+ </body>
+</html>
